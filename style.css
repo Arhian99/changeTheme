@@ -1,0 +1,44 @@
+
+
+:root.DARK {
+    --main-color: black;
+    --alt-color: white;
+}
+
+:root.LIGHT {
+    --main-color: white;
+    --alt-color: black;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color); /*Theme dependent*/
+}
+
+.container {
+    height: clamp(200px, 25vh, 500px);
+    width: clamp(200px, 25vw, 500px);
+    background-color: var(--main-color); /*Theme dependent*/
+    color: var(--alt-color); /*Theme dependent*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--alt-color); /*Theme dependent*/
+    border-radius: 25px;
+}
+
+.toggle-theme {
+    background-color: var(--alt-color); /*Theme dependent*/
+    color: var(--main-color); /*Theme dependent*/
+    border: 1px solid var(--main-color); /*Theme dependent*/
+    border-radius: 25px;
+    padding: 2%;
+    cursor: pointer;
+}
